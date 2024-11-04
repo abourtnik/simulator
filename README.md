@@ -1,10 +1,12 @@
 ## Installation
 
 ```shell
+git clone https://github.com/abourtnik/simulator.git
+cd simulator
 make install
 ```
 
-Then go to `http://localhost:8080
+Then go to `http://localhost:8080`
 
 ## After installation
 
