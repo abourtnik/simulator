@@ -1,4 +1,4 @@
-## Installation
+## Install and run application
 
 ```shell
 git clone https://github.com/abourtnik/simulator.git
