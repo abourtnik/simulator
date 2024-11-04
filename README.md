@@ -19,5 +19,5 @@ make stop
 
 ```shell
 docker exec -it php_container /bin/bash
-docker exec -it node_container /bin/bash
+docker exec -it node_container /bin/sh
 ```
