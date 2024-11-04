@@ -16,11 +16,10 @@ stop: ## Stop dev server
 install: ## Init application
 	cp .env.example .env
 	docker compose up -d --build
-	docker compose exec php_container composer install
+	docker exec -it php_container composer install
 	docker exec -it php_container php artisan key:generate
 	docker exec -it php_container php artisan storage:link
-	docker exec -it php_container php artisan db:create
-	docker exec -it php_container php artisan migrate
+	docker exec -it php_container touch /var/www/html/database/database.sqlite
 	docker exec -it php_container php artisan optimize
 	docker exec -it php_container php artisan cache:clear
 	docker exec -it node_container npm install
